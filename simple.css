@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(45deg, #0a0a0a, #3a4452);
+    font-family: "Nunito", sans-serif;
+}
+
+#calc{
+    background-color: #1C1C1C;
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: 0px 3px 15px rgba(113, 115, 119, 0.5)
+}
+
+#display{
+    width: 100%;
+    padding: 50px;
+    font-family: "Nunito", sans-serif;
+    font-size: 5rem;
+    text-align: right;
+    max-width: 430px;
+    border: none;
+    background-color: #333333;
+    color: white;
+    padding-right: 55px;
+}
+
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+    background-color: #333333;
+}
+
+button{
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(0, 0%, 30%);
+    color: #D4D4D2;
+    font-family: "Nunito", sans-serif;
+    font-size: 2.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: hsl(0, 0%, 40%);
+
+}
+button:active{
+    background-color: hsl(0, 0%, 50%);
+
+}
+
+.operator-btn{
+    background-color: hsl(35, 100%, 50%);
+}
+.operator-btn:hover{
+    background-color: hsl(35, 100%, 60%);
+}
+.operator-btn:active{
+    background-color: hsl(35, 100%, 70%);
+}
+
+.op-btn{
+    background-color: hsl(0, 0%, 45%);
+}
+.op-btn:hover{
+    background-color: hsl(0, 0%, 55%);
+}
+.op-btn:active{
+    background-color: hsl(0, 0%, 65%);
+}
+
+.hidden {
+    display: none;
+}

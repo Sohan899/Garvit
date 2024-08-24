@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link id="theme" rel="stylesheet" type="text/css" href="sci.css" />
+</head>
+<body>
+
+    <div id="calc">
+        <input id="display" readonly>
+        <div id="keys">
+            <button id="(" onclick="brackleft()" class="sci-op">(</button>
+            <button id=")"onclick="brackright()" class="sci-op">)</button>
+            <button id="MC" onclick="memoryClear()" class="sci-op">MC</button>
+            <button id="MR" onclick="memoryRecall()" class="sci-op">MR</button>
+            <button id="M+" onclick="memoryAdd()" class="sci-op">M+</button>
+            <button id="M-" onclick="memorySubtract()" class="sci-op">M-</button>
+            <button id="AC" onclick="clearDisplay()" class="op-btn">AC</button>
+            <button id="del" onclick="del()" class="op-btn">⌫</button>
+            <button id="%" onclick="appendToDisplay('%')" class="op-btn">%</button>
+            <button id="/" onclick="appendToDisplay('/')" class="operator-btn">÷</button>
+
+
+            <button id="2nd" onclick="togglesecondFunction()" class="sci-op">2nd</button>
+            <button id="x2" onclick="square()" class="sci-op">x²</button>
+            <button id="x3" onclick="cube()" class="sci-op">x³</button>
+            <button id="xy" onclick="power()" class="sci-op">xʸ</button>
+            <button id="ex" onclick="exponent()" class="sci-op">eˣ</button>
+            <button id="10x" onclick="ten_pow()" class="sci-op">10ˣ</button>
+            <button id="7" onclick="appendToDisplay('7')">7</button>
+            <button id="8" onclick="appendToDisplay('8')">8</button>
+            <button id="9" onclick="appendToDisplay('9')">9</button>
+            <button id="X" onclick="appendToDisplay('*')" class="operator-btn">×</button>
+
+
+            <button id="1/x" onclick="appendToDisplay('1/')" class="sci-op">1/x</button>
+            <button id="2rx" onclick="sqrt()" class="sci-op">²√x</button>
+            <button id="3rx" onclick="cbrt()" class="sci-op">³√x</button>
+            <button id="yrx" onclick="yrt()" class="sci-op">ʸ√x</button>
+            <button id="ln" onclick="natlog()" class="sci-op">ln</button>
+            <button id="log10" onclick="logaritm()" class="sci-op">log₁₀</button>
+            <button id="4" onclick="appendToDisplay('4')">4</button>
+            <button id="5" onclick="appendToDisplay('5')">5</button>
+            <button id="6" onclick="appendToDisplay('6')">6</button>
+            <button id="-" onclick="appendToDisplay('-')" class="operator-btn">—</button>
+
+
+            <button id="x!" onclick="ten_pow()" class="sci-op">x!</button>
+            <button id="sin" onclick="sine()" class="sci-op">sin</button>
+            <button id="cos" onclick="cosine()" class="sci-op">cos</button>
+            <button id="tan" onclick="tangent()" class="sci-op">tan</button>
+            <button id="e" onclick="appendToDisplay('Math.E')" class="sci-op">e</button>
+            <button id="EE" onclick="appendToDisplay('e')" class="sci-op">EE</button>
+            <button id="1" onclick="appendToDisplay('1')">1</button>
+            <button id="2" onclick="appendToDisplay('2')">2</button>
+            <button id="3" onclick="appendToDisplay('3')">3</button>
+            <button id="+" onclick="appendToDisplay('+')" class="operator-btn">＋</button>
+
+
+            <button id="toggle-sci" onclick="toggleScientific()" class="sci-op">⏼</button>
+            <button id="sinh" onclick="hsine()" class="sci-op">sinh</button>
+            <button id="cosh" onclick="hcosine()" class="sci-op">cosh</button>
+            <button id="tanh" onclick="htangent()" class="sci-op">tanh</button>
+            <button id="pi" onclick="appendToDisplay('Math.PI')" class="sci-op">π</button>
+            <button id="radian" onclick="toggleRadiansDegrees()" class="sci-op">Rad</button>
+            <button id="00" onclick="appendToDisplay('00')">00</button>
+            <button id="0" onclick="appendToDisplay('0')">0</button>
+            <button id="." onclick="appendToDisplay('.')">.</button>
+            <button id="=" onclick="calculate()" class="operator-btn">=</button>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
